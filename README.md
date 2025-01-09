@@ -32,15 +32,23 @@
 
 ## 🚀 Projects  
 
-### [Rust SQL Database](https://github.com/YZhao-prog/SharkDB) | Rust, SQL  
-- Developed a lexer and parser to tokenize SQL statements and generate ASTs.  
-- Built a query planner and executor, optimizing query performance.  
-- Implemented a Bitcask-based disk storage system for persistent, high-performance data storage.  
+### [Rust SQL Database](https://github.com/YZhao-prog/Rust-SQL-Database) | Rust, SQL | Sep 2024 – Present  
+- **Lexer and Parser**: Developed an integrated lexer and parser to tokenize SQL statements and generate abstract syntax trees (ASTs).  
+- **Query Planner and Executor**: Designed a query planner that transformed ASTs into optimized physical execution plans and implemented a multi-stage executor for efficient query execution.  
+- **Storage Mechanisms**: Leveraged Rust’s `BTreeMap` for in-memory storage and implemented a Bitcask-based disk storage system for persistence, ensuring high-performance data insertion and retrieval.  
+- **Storage Engines and SQL Support**: Built both in-memory and disk-backed storage engines with support for essential SQL commands, optimizing for query performance and scalability.  
 
-### Operating System Kernel Based on RISC-V ISA | C, C++  
-- Enhanced virtual memory with lazy allocation and copy-on-write.  
-- Optimized file system and implemented symbolic links.  
-- Added custom system calls and an interrupt-based alarm system.  
+### Operating System Kernel Based on RISC-V ISA | C, C++, RISC-V | May 2024 – Jul 2024  
+- **Memory Management**: Modified virtual memory and page table mechanisms for efficient user-kernel data transfers, implementing lazy allocation and copy-on-write using page faults.  
+- **Process Management**: Studied xv6 process scheduling and thread switching, implementing user-mode coroutines and optimizing locking mechanisms to reduce race conditions.  
+- **File System Improvements**: Increased single file size limit from 268KB to 65803KB, implemented symbolic links, and developed memory-mapped files to reduce disk access.  
+- **System Calls and Interrupts**: Added new system calls and implemented an alarm system call using internal interrupt handling.  
+
+### Scalable and Concurrent Database Kernel | C++, SQL | Sep 2023 – Dec 2023  
+- **Low-Level**: Developed a Buffer Pool using scalable hash tables and LRU-K, implementing page scheduling functionality within the Buffer Pool.  
+- **Mid-Level**: Built non-clustered indexes and iterator capabilities with B+ trees, using independent read-write locks for safe and efficient multi-threaded access.  
+- **Execution Layer**: Implemented transaction execution for various statements (SELECT, INSERT, GROUP BY, JOIN) using the Volcano Model.  
+- **Global Concurrency Control**: Designed a lock manager based on a two-phase locking protocol, supporting three isolation levels.  
 
 ## 📈 GitHub Stats  
 
